@@ -620,6 +620,7 @@ primary:
     rollingUpdate: {}
   ## @param primary.extraVolumes Optionally specify extra list of additional volumes for the PostgreSQL Primary pod(s)
   ##
+
   extraVolumes:
     - name: postgresql-run
       emptyDir: {}
