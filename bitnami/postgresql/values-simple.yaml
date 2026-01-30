@@ -1,0 +1,20 @@
+# based on https://github.com/hmcts/chart-java/blob/master/java/values.yaml
+image:
+  registry: hmctspublic.azurecr.io
+  repository: imported/postgres
+  tag: "17.6-alpine"
+  ## Whether to deploy the Postgres Chart or not
+enabled: true
+  ## Default Postgres Configuration parameters
+auth:
+  username: javapostgres
+  password: javapassword
+  database: javadatabase
+## Disable Postgres Persistence
+primary:
+  persistence:
+    enabled: false
+
+global:
+  enableKeyVaults: false
+  devMode: false
