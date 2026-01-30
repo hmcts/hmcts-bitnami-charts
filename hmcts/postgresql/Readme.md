@@ -9,8 +9,10 @@ based on the Bitnami PostgreSQL Helm chart locates at ./bitnami/postgresql.
 
 ## To install the chart
 
+Note: the chart is only tested in a CFT sbox cluster. 
+
 ```bash
 az acr login --name hmctsprod.azurecr.io
-helm install postgresql hmcts/postgresql --namespace <NAMESPACE> -f hmcts/postgresql/values-simple.yaml
+helm install postgresql hmcts/postgresql --namespace <NAMESPACE> -f hmcts/postgresql/values-sbox.yaml
 ```
 
